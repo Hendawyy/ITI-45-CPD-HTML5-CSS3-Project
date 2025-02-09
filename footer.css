@@ -1,0 +1,109 @@
+.footer-section {
+    background-color: #e4d8d6;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-contact, 
+.footer-service, 
+.footer-company, 
+.footer-social {
+    padding: 0 15px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-service h5,
+.footer-company h5,
+.footer-social h5 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.footer-service ul,
+.footer-company ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-service ul li,
+.footer-company ul li {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.footer-service ul li a,
+.footer-company ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-service ul li a:hover,
+.footer-company ul li a:hover {
+    color: #666;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links a i{
+    color: #333;
+    font-size: 2.5em;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer-contact .phone {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.footer-contact .hours,
+.footer-contact .email {
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

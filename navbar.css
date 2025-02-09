@@ -1,0 +1,122 @@
+.nav-section {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.nav-links {
+    display: flex; 
+    gap: 55px;
+    justify-content: flex-end; 
+    width: 90%;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #f8c1a8;
+    font-weight: bold;
+}
+
+.cart {
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+.cart:hover {
+    color: #f8c1a8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-icons {
+    display: flex;
+    gap: 24px; 
+}
+
+@media screen and (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        box-shadow: none;
+        background: transparent;
+        text-align: left;
+    }
+
+    .cart {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000; 
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        width: 100%;
+        display: block;
+    }
+
+    .cart {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
