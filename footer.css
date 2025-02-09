@@ -15,9 +15,9 @@
     gap: 30px;
 }
 
-.footer-contact, 
-.footer-service, 
-.footer-company, 
+.footer-contact,
+.footer-service,
+.footer-company,
 .footer-social {
     padding: 0 15px;
 }
@@ -69,7 +69,7 @@
     align-items: center;
 }
 
-.social-links a i{
+.social-links a i {
     color: #333;
     font-size: 2.5em;
     transition: opacity 0.3s ease;
