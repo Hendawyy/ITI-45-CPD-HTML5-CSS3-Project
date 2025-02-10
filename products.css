@@ -7,6 +7,12 @@ body {
     background-color: #fff;
 }
 
+#wholePage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -17,7 +23,7 @@ body {
 }
 
 .hero img {
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
 }
 
