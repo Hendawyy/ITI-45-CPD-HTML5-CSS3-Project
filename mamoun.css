@@ -105,6 +105,9 @@ input,
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact-form {
