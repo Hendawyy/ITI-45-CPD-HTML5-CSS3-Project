@@ -46,6 +46,11 @@
     font-size: 30px;
 }
 
+.cart a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .cart:hover {
     color: #f8c1a8;
     font-weight: bold;
@@ -54,6 +59,7 @@
 
 .menu-toggle {
     display: none;
+    margin-left: 25px;
     font-size: 30px;
     cursor: pointer;
 }
@@ -66,7 +72,8 @@
 
 .nav-icons {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 0px;
 }
 
 @media screen and (min-width: 769px) {
