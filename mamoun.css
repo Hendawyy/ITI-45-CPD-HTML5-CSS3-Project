@@ -1,0 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: #353535;
+    font-family: sans-serif;
+}
+
+.about-us-page {
+    display: grid;
+    grid-template-rows: repeat(3, 600px);
+    justify-items: center;
+    align-items: center;
+}
+
+.header-image {
+    width: 1200px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.header-image>img {
+    position: relative;
+    width: 100%;
+    top: -175px;
+}
+
+
+.about-us-section,
+.work-with-us-section {
+    width: 1000px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading-text {
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.title-text {
+    margin: 0;
+    font-size: 22px;
+}
+
+.content-text {
+    font-size: 18px;
+    word-spacing: 6px;
+    line-height: 28px;
+}
+
+.work-with-us-section {
+    width: 800px;
+    height: 500px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input,
+.message-content {
+    width: 600px;
+    height: 40px;
+    font-family: sans-serif;
+    border: 1px solid #E4D8D6;
+    font-size: 16px;
+    margin: 8px 0px;
+    padding-left: 8px;
+    outline: none;
+    resize: none;
+}
+
+.message-content {
+    height: 150px;
+    padding-top: 8px;
+}
+
+#submit-button {
+    width: 200px;
+    height: 60px;
+    border: 0;
+    background-color: #E4D8D6;
+    color: #FFFFFF;
+    font-size: 18px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #F9C4AC;
+}
+
+.contact-us-page {
+    width: 100%;
+    height: 90svh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.contact-form {
+    padding: 0px 0px 50px 50px;
+}
+
+.contact-details {
+    padding: 0px 0px 50px 50px;
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    row-gap: 10px;
+}
+
+.contact-details >div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 20px;
+}
