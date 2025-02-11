@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form action="register.php" method="POST">
+                <h1 class="form-title">Create a new account</h1>
+                <div class="row">
+                    <div class="col-6 col-12-md form-group">
+                        <label class="form-label" for="">First Name</label>
+                        <input
+                            class="form-input"
+                            name="first_name"
+                            type="text"
+                            required
+                            placeholder="moaaz"
+                        />
+                    </div>
+                    <div class="col-6 col-12-md form-group">
+                        <label class="form-label" for="">Last Name</label>
+                        <input
+                            class="form-input"
+                            name="last_name"
+                            type="text"
+                            required
+                            placeholder="briek"
+                        />
+                    </div>
+                    <div class="col-12 form-group">
+                        <label class="form-label" for="">Email/Phone</label>
+                        <input
+                            class="form-input"
+                            name="email_phone"
+                            type="email"
+                            required
+                            placeholder="Email address or phone number"
+                        />
+                    </div>
+                    <div class="col-12 form-group">
+                        <label class="form-label" for="">Gender</label>
+                        <select required class="form-input" name="gender">
+                            <option value="">select</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label class="form-label" for="">Password</label>
+                        <input
+                            class="form-input"
+                            type="password"
+                            name="password"
+                            required
+                            placeholder="Password"
+                        />
+                    </div>
+                    <div class="col-12 form-action">
+                        <input
+                            class="submit-button"
+                            type="submit"
+                            value="Register"
+                        />
+                        <hr style="margin: 20px 0" />
+                        <a class="forget-password-link" href="login.html"
+                            >Already have an account?</a
+                        >
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
