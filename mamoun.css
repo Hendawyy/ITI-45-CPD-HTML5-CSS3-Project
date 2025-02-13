@@ -124,3 +124,9 @@ input,
     grid-template-columns: 50px 1fr;
     column-gap: 20px;
 }
+
+@media (max-width: 768px) {
+    .contact-us-page {
+        grid-template-columns: 1fr;
+    }
+}
